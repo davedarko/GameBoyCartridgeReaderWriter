@@ -120,10 +120,8 @@ void loop() {
     }
     if (c == 'r')
     {
-      Serial.println("Reading");
       analyze_cartridge(true);
       read_ROM();
-      Serial.println("done");
     }
     if (c == 'w')
     {
