@@ -22,13 +22,15 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  analogWrite(led_green, 255);
+  digitalWrite(led_red, LOW);
   delay(1000);
-  analogWrite(led_green, 255-4);
+  digitalWrite(led_blue, LOW);
   delay(1000);
-  analogWrite(led_green, 255-16);
-  delay(1000);
-  analogWrite(led_green, 255-64);
+  digitalWrite(led_green, LOW);
   delay(1000);
   Serial.println("Hello World!");
+
+  digitalWrite(led_blue, HIGH);
+  digitalWrite(led_red, HIGH);
+  digitalWrite(led_green, HIGH);
 }
